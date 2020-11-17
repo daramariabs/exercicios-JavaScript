@@ -9,13 +9,57 @@
         body {
             background-color: rgb(228, 51, 148);
             color: white;
-            font: normal 18pt arial;
+            font: normal 16pt arial;
         }
     </style>
 </head>
 <body>
     <h1>Iniciando o Dom</h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
+    <p>Aprendendo a usar o <strong>DOM</strong> no JavaScript.</p>
+    <div class="msg">Clique em mim</div>
+    <div class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos laboriosam cumque veniam fugit harum voluptate dolorem ad dignissimos? Commodi quasi sit expedita praesentium repellat voluptatibus, eius accusantium eveniet atque?</div>
+
+    <script>
+        //metodo de acesso por marca
+        /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + p1.innerHTML)
+        //corpo.style.background = 'blue'
+        p1.style.color = 'red' 
+        */
+
+        //metodo de acesso por  iD
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerHTML = 'estou aguardando...'
+        d.style.color = 'black'
+        */
+
+        //metodo de acesso por nome
+        /*
+        var d = window.document.getElementsByName('msg')[0]
+        d.style.background = 'blue'
+        */
+
+        //metodo de acesso por classe
+        /*
+        var d = window.document.getElementsByClassName('msg')[1]
+        d.style.background = 'gray'
+        */
+
+        //metodo de acesso por seletor
+        var d = window.document.querySelectorAll('div.msg')[0]
+        var d2 = window.document.querySelectorAll('div.msg')[1]
+
+        d.style.background = 'gray'
+        d.innerText = 'testando seletores com Java Script...'
+
+        d2.style.background = 'white'
+        d2.style.color = 'black'
+    
+    </script>
 </body>
 </html>
