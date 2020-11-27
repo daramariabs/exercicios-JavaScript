@@ -45,7 +45,5 @@ switch(mes){
         break
 }
 
-var data = mes + ' de ' + atual.getFullYear()
-
 console.log(`Horario atual do sistema - ${hora}`)
-console.log(`Data atual do sistema - ${data}`)
+console.log(`Data atual do sistema - ${mes + ' de ' + atual.getFullYear()}`)
