@@ -37,6 +37,7 @@
             var res = window.document.getElementById('res')
 
             //converter o dados recebidos da caixa para numeros
+            //o value é para pegar o valor que está dentro da caixa
             var v1 = Number(tn1.value)
             var v2 = Number(tn2.value)
 
@@ -44,8 +45,8 @@
             var s = v1 + v2
 
             //mostrando o resultado
-            res.style.background = 'gray'
-            res.innerHTML = ` A soma entre ${v1} e ${v2} é igual a ${s}`
+            res.style.background = 'pink'
+            res.innerHTML = ` A soma entre ${v1} e ${v2} é igual a <strong>${s}</strong>`
         }
     </script>
 </body>
