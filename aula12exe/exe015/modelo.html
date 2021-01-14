@@ -17,16 +17,19 @@
             <form action="">
                 <label for="nascimento">Ano de nascimento:</label>
                 <input type="number" name="nascimento" id="nascimento"><br>
+
                 <label for="sexo">Sexo:</label>
-                <input type="radio" name="sexo" id="masc">Masculino
-                <input type="radio" name="sexo" id="fem">Feminino
+                <input type="radio" name="sexo" id="masc" checked>
+                <label for="masc">Masculino</label> 
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
                 <br>
-                <button type="submit">Verificar</button>
+                <input type="button" value="Verificar" onclick="verificar()">
 
             </form>
         </div>
-        <div id="mensagem">
-
+        <div id="resultado">
+            Preencha os dados acima para ver o resultado...
         </div>
     </section>
     <footer>

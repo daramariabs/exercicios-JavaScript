@@ -21,6 +21,10 @@ div {
     padding: 8px;
 }
 
+form {
+    line-height: 35px;
+}
+
 footer {
     color: white;
     text-align: center;

@@ -1,10 +1,10 @@
 function carregar(){
     var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')
+    var img = window.document.getElementById('foto')
     var fundo = window.document.getElementById('fundo')
     var data = new Date()
     var horas = data.getHours() +":" + data.getMinutes() + ":" + data.getSeconds()
-
+    horas = 19
     msg.innerHTML = `Agora são ${horas}`
 
     if(horas >= 00 && horas < 12){
@@ -14,7 +14,7 @@ function carregar(){
     }else if(horas <= 18){
         //boa tarde
         img.src = '/aula12exe/tarde.png'
-        fundo.style.background = '#AEB404'
+        fundo.style.background = 'blue'
     }else {
         //boa noite
         img.src = '/aula12exe/noite.png'
