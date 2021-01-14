@@ -5,19 +5,22 @@ function carregar(){
     var data = new Date()
     var horas = data.getHours()
 
-    msg.innerHTML = `Agora são ${data.getHours() +":" + data.getMinutes() + ":" + data.getSeconds()}`
-
     if(horas >= 0 && horas < 12){
         //bom dia
+        msg.innerHTML = '<strong>Bom dia!</strong><br>'
         img.src = 'manha.png'
         fundo.style.background = '#886A08'
     }else if(horas <= 18){
         //boa tarde
+        msg.innerHTML = '<strong>Boa tarde!</strong><br>'
         img.src = 'tarde.png'
         fundo.style.background = '#AEB404'
     }else {
         //boa noite
+        msg.innerHTML = '<strong>Bom noite!</strong><br>'
         img.src = 'noite.png'
         fundo.style.background = '#2E2E2E'
     }
+
+    msg.innerHTML += `Agora são ${data.getHours() +":" + data.getMinutes() + ":" + data.getSeconds()}`
 }

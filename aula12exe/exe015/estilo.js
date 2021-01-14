@@ -11,7 +11,7 @@ function verificar(){
     }else {
         //idade da pessoa
         var idade = ano_atual - ano_nascimento
-        //sexo da pessoa 
+        //array contendo os sexos  
         var sexo = document.getElementsByName('sexo')
         var genero = ''
         //criando uma tag de imagem
@@ -19,6 +19,7 @@ function verificar(){
         //atribuindo um id=foto para a imagem
         img.setAttribute('id','foto')
 
+        
         if(sexo[0].checked){
             genero = 'homem'
             if (idade >=0 && idade < 10){
