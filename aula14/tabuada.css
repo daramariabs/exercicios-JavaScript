@@ -1,0 +1,70 @@
+body {
+    background: rgba(71, 175, 189, 0.952);
+    font: normal 15pt arial;
+}
+
+main {
+    width: 700px;
+    margin: auto;
+
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.473);
+}
+
+h1, p {
+    text-align: center;
+}
+
+p {
+    display: inline;
+}
+
+input[type=number] {
+    width: 50px;
+
+    padding: 10px;
+}
+
+input[type=button]{
+    display: block;
+    background: rgb(71, 175, 189);
+    color: white;
+    width: 100px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    float: right;
+    
+}
+
+div {
+    display: inline-block;
+    margin: 10px;
+
+    width: 130px;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+#soma {
+    color: rgba(255, 0, 0, 0.459);
+}
+
+#subtracao {
+    color: rgba(0, 128, 0, 0.459);
+}
+
+#multiplicacao {
+    color: rgba(0, 0, 255, 0.459);
+}
+
+#divisao {
+    color: rgba(211, 42, 253, 0.459);
+}
