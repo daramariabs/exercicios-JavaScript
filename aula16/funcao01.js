@@ -8,4 +8,4 @@ function parimp(n){
 
 /* let msg = parimp(5)
 console.log(`${msg}`) */
-console.log(`${parimp(5)}`)
+console.log(parimp(5))
